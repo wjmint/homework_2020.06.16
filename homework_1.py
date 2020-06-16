@@ -1,4 +1,3 @@
-# github too hard
 # problem 1
 def remove(x):
 	if x.endswith('!'):
@@ -90,7 +89,7 @@ print(fillable(stock, "leggos", 2))
 print(fillable(stock, "action figure", 1))
 
 print(fillable1(stock, "football", 3))
-print fillable1(stock, "leggos", 2))
+print (fillable1(stock, "leggos", 2))
 print(fillable1(stock, "action figure", 1))
 
 # problem 6
