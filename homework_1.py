@@ -1,4 +1,4 @@
-//:)
+# github too hard
 # problem 1
 def remove(x):
 	if x.endswith('!'):
