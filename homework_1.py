@@ -158,3 +158,47 @@ print(shorten_to_date("Tuesday May 29, 8pm"))
 print(shorten_to_date("Wed September 1, 3am"))
 print(shorten_to_date("Friday May 2, 9am"))
 print(shorten_to_date("Tuesday January 29, 10pm"))
+
+# problem 11
+def shortcut(s):
+	VOWELS = ('a', 'e', 'i', 'o', 'u')
+	return ''.join(x for x in s if x not in VOWELS)
+
+print(shortcut('aeiou AEIOU is it working'))
+
+def getRidOfVo(s):
+	VOWELS = ('a', 'e', 'i', 'o', 'u')
+	return ''.join(x for x in s if x.lower() not in VOWELS)
+	
+print(getRidOfVo('aeiou aeiou is it working'))
+
+# problem 12
+def returnArr(x, y):
+	arr = []
+	temp = 0
+	if x < y:
+		temp = x
+		while temp <= y:
+			arr.append(temp)
+			temp += 1 
+	elif x >= y:
+		temp = y
+		while temp <= x:
+			arr.append(temp)
+			temp += 1
+	return arr
+
+print(returnArr(1, 4))
+print(returnArr(3, 9))
+
+# problem 13
+def shortlongshort(a, b):
+	a_len = len(a)
+	b_len = len(b)
+	if a_len > b_len:
+		return str(b + a + b)
+	elif a_len < b_len:
+		return str(a + b + a)
+
+print(shortlongshort('1', '22'))
+print(shortlongshort('22', '1'))
